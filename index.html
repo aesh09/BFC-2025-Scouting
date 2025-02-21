@@ -22,7 +22,7 @@
 
         <label>Autonomous Actions:</label>
         <select id="autonomousActions">
-            <option value="noAto">no auto</option>
+            <option value="noAuto">no auto</option>
             <option value="lowBasketAuto">low basket auto</option>
             <option value="highBasketAuto">high basket auto</option>
             <option value="lowBarAuto">low bar auto</option>
@@ -33,6 +33,12 @@
 
         <label>Autonomous Objects Scored:</label>
         <input type="number" id="autoObjects" required>
+
+        <select id="autonomousParking">
+            <option value="noParking">did not park</option>
+            <option value="observationZonePark">park in observation zone</option>
+            <option value="submersiblePark">park in submersible</option>
+        </select>
 
         <label>Tele-Op Actions:</label>
         <select id="teleOpActions">
