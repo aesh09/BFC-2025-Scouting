@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
             teamNumber: document.getElementById('teamNumber').value,
             autonomousActions: document.getElementById('autonomousActions').value,
             autoObjects: document.getElementById('autoObjects').value,
+            autonomousParking: document.getElementById('autonomousParking').value,
             teleOpActions: document.getElementById('teleOpActions').value,
             teleOPScored: document.getElementById('teleOPScored').value,
             endgameAscent: document.getElementById('endgameAscent').value
