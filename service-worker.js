@@ -4,8 +4,11 @@ self.addEventListener('install', (event) => {
             return cache.addAll([
                 '/',
                 '/index.html',
-                '/styles.css',
+                '/history.html',
+                '/index-styles.css',
+                '/history-styles.css',
                 '/app.js',
+                '/history.js',
                 '/manifest.json',
             ]);
         })
