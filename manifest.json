@@ -7,7 +7,7 @@
     "theme_color": "#000000",
     "icons": [
         {
-            "src": "assets/BFC-logo.jpg",
+            "src": "BFC-logo.jpg",
             "sizes": "192x192",
             "type": "image/jpg"
         }
