@@ -1,0 +1,95 @@
+/* General Page Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa; /* Light background */
+    color: #333; /* Dark text for readability */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh; /* Ensure it fills the screen */
+    justify-content: flex-start; /* Align content at the top */
+}
+
+/* Logo Styling */
+#logo {
+    width: 130px; /* Keeps it consistent with index page */
+    margin-top: 20px;
+    background-color: #ffffff; /* Ensures visibility */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Header */
+h1 {
+    font-size: 26px;
+    color: #000080; /* Blue accent */
+    margin-bottom: 15px;
+    font-weight: bolder;
+}
+
+/* Match History Container */
+#historyContainer {
+    width: 90%;
+    max-width: 400px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Individual Match Entry */
+.history-entry {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px auto;
+    max-width: 350px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* QR Code Styling */
+.qr-code {
+    margin-top: 10px;
+}
+
+/* Buttons (Back & Clear History) */
+button {
+    width: 100%;
+    max-width: 300px; /* Keeps button sizes consistent */
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+/* Back to Scouting Button */
+#backToScout {
+    background: #FF3600; /* Green (same as Save Data button) */
+    color: white;
+}
+
+#backToScout:hover {
+    background: #FF3600;
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 500px) {
+    #historyContainer {
+        width: 95%;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}

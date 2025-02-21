@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FTC 2025 Scouting</title>
+    <link rel="stylesheet" href="index-styles.css">
+    <script defer src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+</head>
+<body>
+    <img id="logo" src="assets/BFC-logo.jpg" alt="BFC Logo">
+    <h1>BFC 2025 Scouting</h1>
+    
+    <form id="scoutingForm">
+        <label>Match Number:</label>
+        <input type="number" id="matchNumber" required>
+
+        <label>Team Number:</label>
+        <input type="number" id="teamNumber" required>
+
+        <label>Autonomous Actions:</label>
+        <select id="autonomousActions">
+            <option value="noAto">no auto</option>
+            <option value="lowBasketAuto">low basket auto</option>
+            <option value="highBasketAuto">high basket auto</option>
+            <option value="lowBarAuto">low bar auto</option>
+            <option value="highBarAuto">high bar auto</option>
+            <option value="observationZonePark">park in obzervation zone</option>
+            <option value="submersiblePark">park in submersible</option>
+        </select>
+
+        <label>Autonomous Objects Scored:</label>
+        <input type="number" id="autoObjects" required>
+
+        <label>Tele-Op Actions:</label>
+        <select id="teleOpActions">
+            <option value="netZone">net zone</option>
+            <option value="lowBasket">low basket</option>
+            <option value="highBasket">high basket</option>
+            <option value="lowBar">low bar</option>
+            <option value="highBar">high bar</option>
+        </select>
+
+        <label>Tele-Op Objects Scored:</label>
+        <input type="number" id="teleOPScored" required>
+
+        <label>Endgame Ascent:</label>
+        <select id="endgameAscent">
+            <option value="level1">level 1</option>
+            <option value="level2">level 2</option>
+            <option value="level3">level 3</option>
+        </select>
+
+        <button type="submit">Save Data</button>
+        <button type="button" id="generateQR">Generate QR Code</button>
+        <button onclick="window.location.href='history.html'">View Match History</button>
+
+    </form>
+
+    <div id="qrCodeContainer"></div>
+    
+    <script src="qr-scanner.js"></script>
+</body>
+</html>
